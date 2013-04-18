@@ -1,0 +1,18 @@
+#ifndef _LUASERVER_
+#define _LUASERVER_
+#define MAX_BUF 1024
+#define MAX_PATH 1024
+class ResponseManager;
+class LuaServer
+{
+public :
+	int initServer(int port);
+	void start();
+private:
+	int makeServerSocket(int port);
+	char* doResponse(int clientSocket);
+	int serverSocket;
+	ResponseManager *manager;
+};
+#endif
+
