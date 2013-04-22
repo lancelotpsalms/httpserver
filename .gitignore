@@ -12,3 +12,5 @@
 *.la
 *.a
 .svn
+*.swp
+*.swo
