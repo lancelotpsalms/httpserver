@@ -16,6 +16,7 @@ class HttpConnection{
 			clientFd=0;
 			request.reuse();
 		};
+		//int handleRequest();
 		Request request;
 		Response response;
 		int clientFd;
