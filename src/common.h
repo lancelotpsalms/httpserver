@@ -1,6 +1,6 @@
 #ifndef _COMMON_H_
 #define _COMMON_H_
-#include "logging.h"
+#include "glog/logging.h"
 class ReuseAble{
 	public:
 		virtual void reuse()=0;
